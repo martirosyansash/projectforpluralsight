@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+#wraper{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+#right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo{
+    margin-bottom: 3vh;
+    margin-right: 10vh;
+}
+#signin .logo img{
+    width: 100%;
+    height: 150px;
+}
+
+#signin label{
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+#signin .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+/*button*/
+.primary-btn{
+    border: 0;
+    padding: 0.7rem;
+    height: 2.7rem;
+    display: block;
+    border-radius: 2px;
+    font-family:  500;
+    background: #f96816;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.5s;
+    width: 100%;
+}
+
+.primary-btn:hover{
+    background-color: #fF7b39;
+}
+.secondory-btn{
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    height: 2.7rem;
+    display: block;
+    border-radius: 2px;
+    font-family:  500;
+    background: non;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.2rem;
+    transition: background-color 0.5s;
+    width: 100%;
+}
+
+.secondory-btn:hover{
+    background-color: #fF7b39;
+}
+
+#signin .links,
+.or,
+.secondory-btn{
+    width: 60%;
+}
+#signin .links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.9rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+#signin .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+#signin .or span{
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/img/630fc2cbf5d0d56b6af5d540_Rectangle-7.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+#showcase .showcase-content{
+    font-size: 1.5rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+#showcase .secondory-btn{
+    width: 60%;
+    margin: auto;
+
+}
+
+
+#main-footer {
+    color: #ccc;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width:  80%;
+}
+#main-footer a{
+    color: #f96816;
+    text-decoration: underline;
+}
+/*Media Queries*/
+
+@media (min-width: 1200px) {
+    #left{
+        flex: 4;
+    }
+    #right{
+        flex:6;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        overflow: auto;
+    }
+    #right{
+        display:none;
+    }
+    #left{
+        justify-content: start;
+        margin-top: 2vh;
+    }
+}
+
+
+
+
+
+
+
+
